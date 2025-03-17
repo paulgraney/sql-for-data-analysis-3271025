@@ -1,6 +1,7 @@
 SELECT Customer.CustomerID,
   Customer.FirstName,
-  Customer.LastName,
+  Customer.LastName,-- test
+  
   COUNT(1) as NUM_ORDERS
 FROM Customer
   JOIN Orders ON Customer.CustomerID = Orders.CustomerID
